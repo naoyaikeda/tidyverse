@@ -11,10 +11,14 @@ RUN /bin/bash -c "source /etc/default/locale"
 RUN ln -sf  /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 # Install ipaexfont
-RUN apt-get update && apt-get install -y \
+RUN apt update && apt install -y \
   fonts-ipaexfont
 
+# Install some packages
+
+RUN apt install -y vim openjdk-8-jdk libv8-3.14-dev libxml2-dev libcurl4-openssl-dev libssl-dev
+
 # Install packages
-RUN Rscript -e "install.packages(c('githubinstall', 'ranger'))"
+RUN Rscript -e "install.packages(c('xgboost', 'h2o', 'V8', 'huge', 'Matrix', 'lme4', 'githubinstall', 'ranger', 'rstan', 'ggmcmc', 'bayesplot', 'brms', 'rstanarm', 'dlm', 'KFAS', 'bsts', 'BNSL', 'fitdistrplus'))"
 
 CMD ["/init"]
