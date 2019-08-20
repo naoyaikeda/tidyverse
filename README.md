@@ -19,14 +19,13 @@
 以下のコマンドを実行することで、RStudioサーバのコンテナを起動することが出来ます。
 
 ```shell
-docker run -d -p 127.0.0.1:8787:8787 rockerjp/tidyverse
+docker run -d -e PASSWORD=<パスワード> -p 127.0.0.1:8787:8787 rockerjp/tidyverse
 ```
 
 起動した後、`http://<サーバのアドレス(ローカルで実行している場合localhost)>:8787`にブラウザからアクセスすることでRStudioサーバを使用できます。
-ユーザ名とパスワードは下記の通りです。
+ユーザ名は下記の通りです。
 
 - username: rstudio
-- password: rstudio
 
 <!--
 ## ステータス ##
