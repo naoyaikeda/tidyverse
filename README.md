@@ -1,4 +1,4 @@
-# rocker-jp/tidyverse
+# nikeda/r_tidyverse
 
 [![Build Status](https://travis-ci.org/rocker-jp/tidyverse.svg?branch=master)](https://travis-ci.org/rocker-jp/tidyverse)
 
