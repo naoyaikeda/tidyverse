@@ -1,6 +1,6 @@
 # nikeda/r_tidyverse
 
-[![Build Status](https://travis-ci.org/rocker-jp/tidyverse.svg?branch=master)](https://travis-ci.org/rocker-jp/tidyverse)
+[![Build Status](https://travis-ci.org/nikeda/tidyverse.svg?branch=master)](https://travis-ci.org/nikeda/tidyverse)
 
 ## This repository is designed for Japanese only, sorry!
 
